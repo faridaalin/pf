@@ -1,26 +1,14 @@
-import { validateInputFields } from '../helpers/validateInputFields.js';
+import { validateInputFields } from './helpers/validateInputFields.js';
+import { toggleMenu } from './helpers/toggleMenu.js';
 
-const menubtn = document.querySelector('.menu-btn');
-const nav = document.querySelector('.nav');
 const sumbitBtn = document.querySelector('.submit');
 const form = document.querySelector('.form');
 const closeBtn = document.querySelector('.btn-close');
 const msgContainer = document.querySelector('.success-msg');
 
-menubtn.addEventListener('click', (e) => {
-  nav.classList.toggle('show');
-});
+toggleMenu();
 
 //Form
-export const removeValidationStyle = (tag) => {
-  const inputs = document.querySelectorAll(tag);
-  const inputsArr = [...inputs];
-
-  for (let i = 0; i < inputsArr.length; i++) {
-    inputsArr[i].classList.remove('is-invalid');
-    inputsArr[i].classList.remove('is-valid');
-  }
-};
 
 sumbitBtn.addEventListener('click', (e) => {
   e.preventDefault();

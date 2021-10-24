@@ -41,30 +41,50 @@
       <section class="container">
         <h1>Contact</h1>
         <section class="content">
-          <form class="form" mailto="farida.alin@outlook.com">
+          <div class="success-msg">
+            <button class="btn-close">Close</button>
+            <p>
+              Thank you for contacting me. I will respond as soon as possible
+            </p>
+          </div>
+          <form
+            class="form"
+            action="mailto:email@email.com"
+            nctype="text/plain"
+            method="post"
+          >
             <div>
               <label for="name"
-                >Name:
-                <input type="text" name="name" id="name" />
-                <div class="response-name"></div>
+                ><span>Name</span>
+                <span class="required">Required</span>
               </label>
+              <input type="text" name="name" id="name" class="input name" />
+              <div class="invalid-feedback name-error"></div>
             </div>
             <div>
               <label for="email"
-                >Email:
-                <input type="text" name="email" id="email" class="email" />
-                <div class="response-email"></div>
-              </label>
-            </div>
-            <div>
-              <label>Comments:</label>
-              <textarea name="comments" rows="12" cols="35">
-Send your comments to us.</textarea
+                ><span>Email</span>
+                <span class="required">Required</span></label
               >
-              <div class="response-message"></div>
+              <input type="email" name="email" id="email" class="input email" />
+              <div class="response-email"></div>
+              <div class="invalid-feedback email-error"></div>
             </div>
             <div>
-              <input type="submit" name="submit" class="submit" value="Send" />
+              <label for="textarea"
+                ><span>Message</span>
+                <span class="required">Required</span>
+              </label>
+              <textarea
+                class="input message"
+                id="textarea"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <div class="invalid-feedback message-error"></div>
+            </div>
+            <div>
+              <input type="button" name="submit" class="submit" value="Send" />
             </div>
           </form>
         </section>
@@ -73,6 +93,6 @@ Send your comments to us.</textarea
     <footer>
       <p>&copy; Farida Alin. All right reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="form.js" type="module"></script>
   </body>
 </html>
