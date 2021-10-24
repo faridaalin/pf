@@ -23,7 +23,7 @@
     </header>
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a href="/" class="link">About</a>
         </li>
         <li class="nav-item">
@@ -32,26 +32,42 @@
         <li class="nav-item">
           <a href="./work.html" class="link">Work Experience</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a href="./contact.html" class="link">Contact me</a>
         </li>
       </ul>
     </nav>
     <main>
-      <section class="about-header">
-        <h1>About</h1>
-        <img src="./me.png" alt="Farida Alin" />
-      </section>
-      <section class="about-content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          tenetur a amet voluptatem magnam iusto eum, nam maiores, recusandae
-          vero rerum porro. Odio tempore officia velit, qui perferendis quisquam
-          temporibus! Non porro qui et, id rem culpa eos consequuntur quasi
-          corrupti voluptatum asperiores sequi maiores magni, voluptates dolorum
-          eaque harum voluptatem dolorem cumque adipisci unde placeat nemo
-          incidunt. Commodi, iste?
-        </p>
+      <section class="container">
+        <h1>Contact</h1>
+        <section class="content">
+          <form class="form" mailto="farida.alin@outlook.com">
+            <div>
+              <label for="name"
+                >Name:
+                <input type="text" name="name" id="name" />
+                <div class="response-name"></div>
+              </label>
+            </div>
+            <div>
+              <label for="email"
+                >Email:
+                <input type="text" name="email" id="email" class="email" />
+                <div class="response-email"></div>
+              </label>
+            </div>
+            <div>
+              <label>Comments:</label>
+              <textarea name="comments" rows="12" cols="35">
+Send your comments to us.</textarea
+              >
+              <div class="response-message"></div>
+            </div>
+            <div>
+              <input type="submit" name="submit" class="submit" value="Send" />
+            </div>
+          </form>
+        </section>
       </section>
     </main>
     <footer>
