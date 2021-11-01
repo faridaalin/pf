@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,47 +16,52 @@
     <title>Portfolio | Home</title>
   </head>
   <body>
-    <header class="header">
-      <div class="menu-btn-container">
-        <button class="menu-btn">Menu</button>
+    <div class="app">
+      <div>
+        <header class="header">
+          <div class="menu-btn-container">
+            <button class="menu-btn">Menu</button>
+          </div>
+          <span>Farida</span>
+        </header>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item active">
+              <a href="/" class="link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="./education.html" class="link">My Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="./work.html" class="link">Work Experience</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="link">Contact me</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <span>Farida</span>
-    </header>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item active">
-          <a href="/" class="link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="./education.html" class="link">My Education</a>
-        </li>
-        <li class="nav-item">
-          <a href="./work.html" class="link">Work Experience</a>
-        </li>
-        <li class="nav-item">
-          <a href="./contact.html" class="link">Contact me</a>
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <h1 class="about-header">About</h1>
-      <div class="main-home">
-        <div class="about-img">
-          <img src="./me.png" alt="Farida Alin" />
-        </div>
-        <section class="about-content">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            tenetur a amet voluptatem magnam iusto eum, nam maiores, recusandae
-            vero rerum porro. Odio tempore officia velit, qui perferendis
-            quisquam temporibus!
-          </p>
+      <main>
+        <h1 class="about-header">About</h1>
+        <section class="main-home">
+          <h2 class="about-intro">Hei👋 ! Velkommen til min portfolio side.</h2>
+          <div class="flex">
+            <p class="about-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              tenetur a amet voluptatem magnam iusto eum, nam maiores,
+              recusandae vero rerum porro. Odio tempore officia velit, qui
+              perferendis quisquam temporibus!
+            </p>
+            <div class="about-img">
+              <img src="./me.png" alt="Farida Alin" />
+            </div>
+          </div>
         </section>
-      </div>
-    </main>
-    <footer>
-      <p>&copy; Farida Alin. All right reserved.</p>
-    </footer>
+      </main>
+      <footer>
+        <p>&copy; Farida Alin. All right reserved.</p>
+      </footer>
+    </div>
     <script src="app.js" type="module"></script>
   </body>
 </html>
